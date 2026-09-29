@@ -1,0 +1,210 @@
+{
+  "profile": {
+    "name": "Brooke Winkler",
+    "discipline": "Mechanical Engineering · Aerospace Engineering",
+    "degreeLine": "B.S. Mechanical Engineering & Aerospace Engineering · Honors Program · Michigan Technological University · Expected April 2030",
+    "classOf": "Class of 2030",
+    "contact": [
+      {
+        "label": "email",
+        "value": "bkwinkle@mtu.edu"
+      },
+      {
+        "label": "phone",
+        "value": "(248) 444-1218"
+      },
+      {
+        "label": "linkedin",
+        "value": "linkedin.com/in/brooke-winkler-8a442a366"
+      },
+      {
+        "label": "location",
+        "value": "Houghton, MI"
+      }
+    ],
+    "target": "Seeking a Summer 2027 motorsports engineering internship",
+    "objective": "Mechanical and Aerospace Engineering student at Michigan Technological University (Honors Program, Class of 2030) with four years of FIRST Robotics design, fabrication, electrical, and leadership experience, including a FIRST Impact Award and World Championship qualification. Independent research into the 2026 Formula 1 power unit regulations and their effect on racing."
+  },
+  "experience": [
+    {
+      "role": "Captain — Design, Strategy, Build & Electrical Lead",
+      "org": "FRC Team 7598 — SCA Constellations",
+      "location": "Wixom, MI",
+      "dates": "Aug 2022 – May 2026",
+      "bullets": [
+        "Ran match strategy, scouting and real-time pit decisions through six-week build-and-compete seasons on a rookie-heavy roster.",
+        "Tuned robot parameters and operational values between and during matches — hands-on telemetry work that made the calls I made executable.",
+        "Owned the technical chain end to end: SolidWorks design, CNC / 3D-print / laser fabrication, wiring, and Java + WPILib bring-up.",
+        "Mentored newer members into independent ownership of design, build, pit and match operations."
+      ],
+      "result": "FIRST Impact Award · World Championship qualifier · regional & state competition runs"
+    },
+    {
+      "role": "Media Team — Photographer & Journalist",
+      "org": "Red Bull Racing Detroit Showrun",
+      "location": "Detroit, MI",
+      "dates": "Jul 2026",
+      "bullets": [
+        "Worked inside a top-tier motorsports event weekend, supporting media and race-adjacent operations and seeing how a professional paddock is run.",
+        "Filed coverage with local news outlets — turning raw event detail into a story a wider audience could follow."
+      ]
+    },
+    {
+      "role": "Business Development",
+      "org": "Avexel Web Design",
+      "location": "Harbor Springs, MI",
+      "dates": "Dec 2025 – Present",
+      "bullets": [
+        "Built the outbound engine from nothing — process, materials, qualification criteria and client pipeline.",
+        "Helped generate the revenue that funded an entire FRC competition robot."
+      ]
+    }
+  ],
+  "analysis": [
+    {
+      "role": "2026 Formula 1 Power Unit Regulations — Independent Research",
+      "org": "Powertrain, deployment & competitive dynamics",
+      "location": "Self-directed",
+      "dates": "2026 – Present",
+      "bullets": [
+        "Reading the 2026 PU regulations clause by clause: the near-50/50 ICE-to-electric split, deployment modes, sustainable fuels, active aero.",
+        "Mapping each rule to its on-track consequence — deployment strategy, race rhythm, overtaking mechanics, and how the field reshapes.",
+        "Writing it as a briefing I would defend line by line — the discipline I want to apply to real team data."
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "role": "Varsity Golf Captain",
+      "org": "St. Catherine of Siena Academy",
+      "location": "Wixom, MI",
+      "dates": "2022 – 2025",
+      "bullets": [
+        "Senior-year captain after three varsity seasons — reading conditions, committing to a plan, holding rhythm under a clock."
+      ],
+      "result": "All-Catholic · All-League · All-Academic"
+    },
+    {
+      "role": "Technical Director & Stage Manager",
+      "org": "SCA Drama",
+      "location": "Wixom, MI",
+      "dates": "2023 – 2026",
+      "bullets": [
+        "Ran backstage technical operations and crews across productions, solving logistics and timing problems live."
+      ],
+      "result": "2× Superior Award — Stage Management"
+    },
+    {
+      "role": "Mentor & Volunteer",
+      "org": "FIRST Robotics — Southeast Michigan",
+      "location": "Michigan",
+      "dates": "2022 – 2026",
+      "bullets": [
+        "Mentored two FTC teams, including standing up a rookie organisation and coaching one to the Michigan State Championship."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "Michigan Technological University",
+      "place": "Houghton, MI",
+      "degree": "B.S. Mechanical Engineering & Aerospace Engineering",
+      "detail": "Honors Program · expected April 2030"
+    },
+    {
+      "school": "St. Catherine of Siena Academy",
+      "place": "Wixom, MI",
+      "degree": "High School Diploma",
+      "detail": "GPA 3.8 · May 2026"
+    }
+  ],
+  "toolkit": [
+    {
+      "label": "Data & Simulation",
+      "items": [
+        "MATLAB",
+        "Mathematica",
+        "Parameter tuning",
+        "Data analysis",
+        "Scouting & pattern reading"
+      ]
+    },
+    {
+      "label": "Race Operations",
+      "items": [
+        "Match strategy",
+        "Pit operations",
+        "Event operations",
+        "Technical briefing",
+        "Team leadership"
+      ]
+    },
+    {
+      "label": "CAD & Design",
+      "items": [
+        "SolidWorks",
+        "Onshape",
+        "Fusion 360",
+        "AutoCAD"
+      ]
+    },
+    {
+      "label": "Fabrication",
+      "items": [
+        "3D printing",
+        "CNC machining",
+        "Laser cutting",
+        "Soldering",
+        "Mechanical fabrication"
+      ]
+    },
+    {
+      "label": "Controls & Code",
+      "items": [
+        "Java",
+        "WPILib",
+        "JavaScript",
+        "Git / GitHub"
+      ]
+    }
+  ],
+  "honors": [
+    "3× Top Technician in the State of Michigan",
+    "NASA-funded scholarship recipient",
+    "Renaissance Woman Award",
+    "FIRST Impact Award · World Championship Qualifier"
+  ],
+  "goal": {
+    "label": "Next",
+    "text": "Formula 1, IndyCar, IMSA or an OEM team — anywhere strategy and telemetry are taken seriously. Building toward Formula SAE at Michigan Tech and eager to put hands on a real data stack."
+  },
+  "stats": [
+    {
+      "value": "4",
+      "label": "seasons of competition operations"
+    },
+    {
+      "value": "6",
+      "label": "week build season, every year"
+    },
+    {
+      "value": "125",
+      "label": "lb competition robots, CAD to floor"
+    },
+    {
+      "value": "2",
+      "label": "FTC teams mentored"
+    }
+  ],
+  "coursework": {
+    "label": "Relevant Coursework",
+    "note": "First-year, Michigan Tech",
+    "items": [
+      "Calculus I & II",
+      "University Physics",
+      "General Chemistry",
+      "Engineering Fundamentals",
+      "Technical Graphics / CAD"
+    ]
+  }
+}
