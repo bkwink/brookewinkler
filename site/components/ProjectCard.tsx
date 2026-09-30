@@ -1,11 +1,7 @@
-"use client";
-import { useState } from "react";
-import { Plus, Minus } from "lucide-react";
 import Reveal from "./Reveal";
 import type { Project } from "@/lib/resume-data";
 
-export default function ProjectCard({ project, defaultOpen = false }: { project: Project; defaultOpen?: boolean }) {
-  const [open, setOpen] = useState(defaultOpen);
+export default function ProjectCard({ project }: { project: Project }) {
   const panelId = `project-${project.id}`;
 
   return (
@@ -48,53 +44,25 @@ export default function ProjectCard({ project, defaultOpen = false }: { project:
           ))}
         </dl>
 
-        <div className="flex-1 px-6 py-5">
+        <div className="flex-1 px-6 py-5" id={panelId}>
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
             Role — <span className="font-semibold text-ink">{project.role}</span>
           </p>
-          <div
-            id={panelId}
-            className={`grid transition-all duration-300 ease-out ${
-              open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
-            }`}
-          >
-            <div className="overflow-hidden">
-              <div className={`space-y-3 text-[14.5px] leading-relaxed text-ink-soft ${open ? "pt-3" : ""}`}>
-                <p>
-                  <strong className="font-semibold text-ink">Problem. </strong>
-                  {project.problem}
-                </p>
-                <p>
-                  <strong className="font-semibold text-ink">Solution. </strong>
-                  {project.solution}
-                </p>
-                <p className="border-l-2 border-accent pl-3 text-ink">
-                  <strong className="font-semibold">Result. </strong>
-                  {project.result}
-                </p>
-              </div>
-            </div>
-          </div>
-          {!open && (
-            <p className="mt-2.5 text-[14.5px] leading-relaxed text-ink-soft line-clamp-2">
+          <div className="space-y-3 pt-3 text-[14.5px] leading-relaxed text-ink-soft">
+            <p>
+              <strong className="font-semibold text-ink">Problem. </strong>
               {project.problem}
             </p>
-          )}
+            <p>
+              <strong className="font-semibold text-ink">Solution. </strong>
+              {project.solution}
+            </p>
+            <p className="border-l-2 border-accent pl-3 text-ink">
+              <strong className="font-semibold">Result. </strong>
+              {project.result}
+            </p>
+          </div>
         </div>
-
-        <button
-          onClick={() => setOpen((v) => !v)}
-          aria-expanded={open}
-          aria-controls={panelId}
-          className="flex w-full items-center justify-between border-t-2 border-ink px-6 py-3.5 font-mono text-[12px] font-semibold uppercase tracking-[0.16em] text-ink transition-colors hover:bg-ink hover:text-paper focus-visible:outline-2 focus-visible:outline-accent"
-        >
-          <span>{open ? "Close details" : "Show details"}</span>
-          {open ? (
-            <Minus className="h-4 w-4" aria-hidden />
-          ) : (
-            <Plus className="h-4 w-4" aria-hidden />
-          )}
-        </button>
       </div>
     </Reveal>
   );

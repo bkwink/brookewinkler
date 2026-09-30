@@ -1,19 +1,6 @@
 import Reveal from "./Reveal";
 import type { Experience } from "@/lib/resume-data";
 
-export function ImpactMetric({ value, label }: { value: string; label: string }) {
-  return (
-    <div>
-      <p className="font-display text-3xl md:text-4xl font-semibold uppercase leading-none tracking-tight text-ink">
-        {value}
-      </p>
-      <p className="mt-1.5 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
-        {label}
-      </p>
-    </div>
-  );
-}
-
 export default function ExperienceEntry({ exp }: { exp: Experience }) {
   return (
     <Reveal tag="article" className="h-full">
@@ -42,17 +29,6 @@ export default function ExperienceEntry({ exp }: { exp: Experience }) {
             </li>
           ))}
         </ul>
-
-        <div className="mt-5 flex flex-wrap gap-2">
-          {exp.tags.map((t) => (
-            <span
-              key={t}
-              className="border border-ink/15 px-2.5 py-1 font-mono text-[11px] uppercase tracking-[0.1em] text-ink-soft"
-            >
-              {t}
-            </span>
-          ))}
-        </div>
 
         {exp.spotlight && (
           <div

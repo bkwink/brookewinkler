@@ -5,7 +5,6 @@ export type Experience = {
   org: string;
   location: string;
   dates: string;
-  tags: string[];
   summary: string;
   bullets: string[];
   spotlight?: { label: string; text: string };
@@ -49,9 +48,8 @@ export const experiences: Experience[] = [
     org: "FRC Team 7598 — SCA Constellations",
     location: "Wixom, MI",
     dates: "Aug 2022 — May 2026",
-    tags: ["SolidWorks", "Fabrication", "Electrical", "Strategy"],
     summary:
-      "A senior-year lead contributor for mechanical + electrical work on a student-run FIRST Robotics Competition team — CAD to competition floor.",
+      "A senior-year lead contributor for mechanical + electrical work on a student-run FIRST Robotics Competition team.",
     bullets: [
       "Took robot subsystems from CAD through fabrication, assembly, wiring, and competition use with 3D printing, CNC, and laser cutting",
       "Helped with controls in Java / WPILib and tuned robot parameters and operational values at events",
@@ -70,9 +68,8 @@ export const experiences: Experience[] = [
     org: "Avexel Web Design",
     location: "Harbor Springs, MI",
     dates: "Dec 2025 — Present",
-    tags: ["Sales", "Client requirements", "Web dev assist"],
     summary:
-      "Handled business development and client outreach for a student-run web development company — from cold calls to developer handoff.",
+      "Handled business development and client outreach for a student-run web development company.",
     bullets: [
       "Identified and contacted prospective clients through cold calling, email, and market research",
       "Put together the company's sales materials and sales process",
@@ -91,8 +88,7 @@ export const experiences: Experience[] = [
     org: "Red Bull Racing Detroit Showrun",
     location: "Detroit, MI",
     dates: "Jul 2026",
-    tags: ["Motorsports media", "Event ops"],
-    summary: "Supported media operations for a professional motorsports showrun — firsthand exposure to top-tier event execution.",
+    summary: "Supported media operations for a professional motorsports showrun.",
     bullets: [
       "Served as photographer and journalist, sharing the experience with local news outlets",
       "Supported media + event operations in a fast, public-facing professional environment",
@@ -105,8 +101,7 @@ export const experiences: Experience[] = [
     org: "Enzu",
     location: "Wixom, MI",
     dates: "Aug 2026",
-    tags: ["Hardware", "Assembly"],
-    summary: "Hands-on hardware work in a professional technology environment.",
+    summary: "Server assembly and hardware preparation at a technology company.",
     bullets: ["Assisted with physical server assembly and hardware preparation"],
   },
   {
@@ -116,7 +111,6 @@ export const experiences: Experience[] = [
     org: "St. Catherine of Siena Academy Drama",
     location: "Wixom, MI",
     dates: "2023 — 2026",
-    tags: ["Tech crew", "Live ops"],
     summary: "Ran backstage technical operations across multiple high school productions.",
     bullets: [
       "Managed technical crews, scene changes, props, and backstage logistics through rehearsals and live shows",
@@ -130,7 +124,6 @@ export const experiences: Experience[] = [
     org: "St. Catherine of Siena Academy",
     location: "Wixom, MI",
     dates: "2022 — 2025",
-    tags: ["Captain Sr. year", "All-Catholic / League / Academic"],
     summary: "Three years on varsity, senior-year captain.",
     bullets: ["Earned All-Catholic, All-League, and All-Academic honors"],
   },

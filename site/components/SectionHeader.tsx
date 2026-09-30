@@ -4,12 +4,10 @@ export default function SectionHeader({
   num,
   eyebrow,
   title,
-  blurb,
 }: {
   num: string;
   eyebrow: string;
   title: string;
-  blurb?: string;
 }) {
   return (
     <Reveal className="mb-10 md:mb-12">
@@ -26,9 +24,6 @@ export default function SectionHeader({
       <div className="relative mt-5 h-[3px] bg-ink/10" aria-hidden>
         <span className="absolute left-0 top-0 h-full w-16 bg-accent" />
       </div>
-      {blurb && (
-        <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-ink-soft">{blurb}</p>
-      )}
     </Reveal>
   );
 }

@@ -6,7 +6,7 @@ import {
   Phone,
 } from "lucide-react";
 import SectionHeader from "@/components/SectionHeader";
-import ExperienceEntry, { ImpactMetric } from "@/components/ExperienceEntry";
+import ExperienceEntry from "@/components/ExperienceEntry";
 import ProjectCard from "@/components/ProjectCard";
 import SkillGroup from "@/components/SkillGroup";
 import Timeline from "@/components/Timeline";
@@ -125,7 +125,6 @@ export default function Page() {
             num="01"
             eyebrow="Profile"
             title="About"
-            blurb="A first-year engineer who likes teams, deadlines, and hardware that has to work."
           />
           <div className="grid gap-5 md:grid-cols-3">
             <Reveal className="md:col-span-2">
@@ -142,11 +141,6 @@ export default function Page() {
                   I also do theatre tech, play golf, mentor young robotics teams, and read F1 technical
                   regulations for fun. I do my best work on teams with a deadline.
                 </p>
-                <div className="mt-7 grid grid-cols-3 gap-6 border-t border-ink/10 pt-6">
-                  <ImpactMetric value="4 yrs" label="FRC design & leadership" />
-                  <ImpactMetric value="2 teams" label="FTC teams mentored" />
-                  <ImpactMetric value="1 robot" label="Funded through sales" />
-                </div>
               </div>
             </Reveal>
             <Reveal delay={120}>
@@ -186,7 +180,6 @@ export default function Page() {
             num="02"
             eyebrow="Career"
             title="Experience"
-            blurb="Accomplishments first, job descriptions second."
           />
           <Reveal>
             <Timeline />
@@ -222,11 +215,10 @@ export default function Page() {
             num="03"
             eyebrow="Selected work"
             title="Projects"
-            blurb="Things I've designed, built, and raced — each with the problem, the approach, and the result."
           />
           <div className="grid gap-6 md:grid-cols-2">
-            {projects.map((p, i) => (
-              <ProjectCard key={p.id} project={p} defaultOpen={i === 0} />
+            {projects.map((p) => (
+              <ProjectCard key={p.id} project={p} />
             ))}
           </div>
           <Reveal>
@@ -243,7 +235,6 @@ export default function Page() {
             num="04"
             eyebrow="Teams"
             title="Leadership"
-            blurb="Early lessons from leading small teams."
           />
           <div className="grid gap-5 md:grid-cols-3">
             {leadership.map((l, i) => (
@@ -300,7 +291,6 @@ export default function Page() {
             num="06"
             eyebrow="Toolkit"
             title="Skills"
-            blurb="The tools and habits I actually use — no proficiency bars."
           />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {skills.map((s, i) => (
@@ -315,7 +305,6 @@ export default function Page() {
             num="07"
             eyebrow="Reach out"
             title="Contact"
-            blurb="Email is fastest — I reply quickly."
           />
           <div className="grid gap-4 md:grid-cols-3 mb-10">
             {[
