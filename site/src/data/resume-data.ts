@@ -17,11 +17,9 @@ export type Project = {
   title: string;
   subtitle: string;
   role: string;
-  status: "Active" | "Competition" | "Research" | "Upcoming";
   problem: string;
   solution: string;
   result: string;
-  specs: { label: string; value: string }[];
 };
 
 export const profile = {
@@ -135,19 +133,12 @@ export const projects: Project[] = [
     title: "FRC Competition Robots",
     subtitle: "Team 7598 · full-season design → build → compete",
     role: "Captain · Design / Build / Electrical / Strategy",
-    status: "Competition",
     problem:
       "Design, build, and compete a 125-lb robot on a ~6-week season with a young team and limited hands — every subsystem has to work on day one of quals.",
     solution:
       "I worked on mechanical and electrical design: rapid-prototyped intakes, helped tune the drivetrain, laid out wiring, and tested and iterated between matches.",
     result:
       "Impact Award · World Championship qualification · regional/state runs — and newer teammates who could run the pit by season's end.",
-    specs: [
-      { label: "Weight class", value: "125 lb" },
-      { label: "Season cadence", value: "~6 weeks" },
-      { label: "Systems", value: "Mech / Elec / Controls" },
-      { label: "Outcome", value: "Worlds qualified" },
-    ],
   },
   {
     id: "f1-pu",
@@ -155,19 +146,12 @@ export const projects: Project[] = [
     title: "F1 2026 Power Unit Research",
     subtitle: "Regulations deep-dive · hybridization & race dynamics",
     role: "Independent researcher",
-    status: "Research",
     problem:
       "The 2026 rules change a lot about F1 power units — a bigger electric split, sustainable fuels, active aero. I'm studying them to understand what changes about the racing.",
     solution:
       "Reading the technical regulations section by section and taking notes on how each rule could affect powertrain design, deployment, and overtaking.",
     result:
       "Living research notes — informing future Formula SAE powertrain thinking and my summer-2027 motorsports internship direction.",
-    specs: [
-      { label: "Focus", value: "PU + hybrid deploy" },
-      { label: "Lens", value: "Regs → on-track effect" },
-      { label: "Output", value: "Briefing notes" },
-      { label: "Status", value: "Ongoing" },
-    ],
   },
   {
     id: "cad",
@@ -175,17 +159,10 @@ export const projects: Project[] = [
     title: "CAD + Rapid Prototyping Practice",
     subtitle: "SolidWorks · Fusion 360 · Onshape · AutoCAD",
     role: "Designer / fabricator",
-    status: "Active",
     problem: "I wanted to get faster at going from a sketch to a physical part.",
     solution:
       "Regular practice: parametric modeling, designing for fabrication, then print, break, fix, and reprint.",
     result: "A small library of parts — and a growing sense of tolerances, fasteners, and what to simplify.",
-    specs: [
-      { label: "Stack", value: "SW / Fusion / Onshape" },
-      { label: "Methods", value: "Print · CNC · Laser" },
-      { label: "Habit", value: "Design → test → revise" },
-      { label: "Goal", value: "FSAE-ready" },
-    ],
   },
   {
     id: "fsae",
@@ -193,17 +170,10 @@ export const projects: Project[] = [
     title: "Formula SAE — Next Up at Michigan Tech",
     subtitle: "Target: join the build team, year one",
     role: "Incoming contributor (ME+AE '30)",
-    status: "Upcoming",
     problem: "FRC taught me to finish and ship a robot. Next I want to learn cars — suspension, aero, powertrain, testing.",
     solution:
       "Joining Michigan Tech's Formula SAE effort: start where the team needs hands, earn design responsibility, bring FRC habits for CAD discipline, wiring quality, and pit operations.",
     result: "To be built — starting fall 2026. I'm hoping to talk motorsports internships for summer 2027.",
-    specs: [
-      { label: "Team", value: "MTU Formula SAE" },
-      { label: "Interests", value: "Chassis / Aero / PU" },
-      { label: "Brings", value: "CAD · Elec · Strategy" },
-      { label: "Timeline", value: "Fall 2026 →" },
-    ],
   },
 ];
 

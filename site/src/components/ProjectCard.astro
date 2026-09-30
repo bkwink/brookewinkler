@@ -13,10 +13,6 @@ const { project } = Astro.props;
     <div class="border-b border-ink/10 px-6 pt-5 pb-5">
       <div class="flex items-center justify-between font-mono text-[11px] uppercase tracking-[0.16em]">
         <span class="font-semibold text-accent">{project.code}</span>
-        <span class="flex items-center gap-1.5 text-muted">
-          <span class="inline-block h-1.5 w-1.5 bg-accent" aria-hidden="true"></span>
-          {project.status}
-        </span>
       </div>
       <h3
         class="mt-2.5 font-display text-[26px] font-semibold uppercase leading-[1.02] tracking-tight text-ink"
@@ -25,19 +21,6 @@ const { project } = Astro.props;
       </h3>
       <p class="mt-1 text-sm text-muted">{project.subtitle}</p>
     </div>
-
-    <dl class="grid grid-cols-2 border-b border-ink/10 divide-x divide-ink/10 sm:grid-cols-4">
-      {project.specs.map((s) => (
-        <div class="px-4 py-3">
-          <dt class="font-mono text-[10px] uppercase tracking-[0.14em] text-muted">
-            {s.label}
-          </dt>
-          <dd class="mt-0.5 text-[13px] font-semibold leading-tight text-ink">
-            {s.value}
-          </dd>
-        </div>
-      ))}
-    </dl>
 
     <div class="flex-1 px-6 py-5" id={`project-${project.id}`}>
       <p class="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
