@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Static export: the whole site pre-renders, so Cloudflare Pages can
+  // serve it directly from the `out` directory with no adapter.
+  output: "export",
 };
 
 export default nextConfig;
