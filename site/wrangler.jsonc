@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "brookewinkler",
+  "compatibility_date": "2026-09-30",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  },
+  // Custom domains (brookewinkler.com + www) are attached after the
+  // first deploy via `npx wrangler domains add` or Dashboard:
+  // Workers & Pages -> brookewinkler -> Settings -> Domains & Routes.
+  // Because the domain is already in your Cloudflare account, DNS is automatic.
+  "workers_dev": true
+}
