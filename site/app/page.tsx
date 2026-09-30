@@ -69,12 +69,6 @@ function Hero() {
           Brooke<br />
           Winkler<span className="text-accent">.</span>
         </h1>
-        <p className="mt-6 max-w-2xl text-lg md:text-[22px] font-medium leading-snug text-ink">
-          I build robots, study race cars, and do my{" "}
-          <span className="underline decoration-accent decoration-[3px] underline-offset-[6px]">
-            best work on teams.
-          </span>
-        </p>
         <div className="mt-7 flex flex-wrap gap-3">
           <a
             href="/Brooke-Winkler-Resume.pdf"

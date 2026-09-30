@@ -32,7 +32,6 @@ export const profile = {
   lastName: "Winkler",
   degree: "Mechanical Engineering + Aerospace Engineering",
   school: "Michigan Technological University",
-  tagline: "First-year ME+AE student — I build robots, study race cars, and do my best work on teams.",
   location: "Houghton, MI",
   classOf: "Class of 2030",
   email: "bkwinkle@mtu.edu",
