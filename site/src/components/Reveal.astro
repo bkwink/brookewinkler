@@ -1,0 +1,17 @@
+---
+interface Props {
+  delay?: number;
+  class?: string;
+  tag?: "div" | "article";
+}
+
+const { delay = 0, class: cls = "", tag = "div" } = Astro.props;
+const Tag = tag;
+---
+<Tag
+  data-reveal
+  class:list={["reveal", cls]}
+  style={`transition-delay:${delay}ms`}
+>
+  <slot />
+</Tag>

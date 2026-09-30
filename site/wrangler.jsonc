@@ -3,7 +3,7 @@
   "name": "brookewinkler",
   "compatibility_date": "2026-09-30",
   "assets": {
-    "directory": "./out",
+    "directory": "./dist",
     "not_found_handling": "404-page"
   },
   // Custom domains (brookewinkler.com + www) are attached after the

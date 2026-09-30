@@ -17,7 +17,6 @@ export type Project = {
   title: string;
   subtitle: string;
   role: string;
-  tools: string[];
   status: "Active" | "Competition" | "Research" | "Upcoming";
   problem: string;
   solution: string;
@@ -136,7 +135,6 @@ export const projects: Project[] = [
     title: "FRC Competition Robots",
     subtitle: "Team 7598 · full-season design → build → compete",
     role: "Captain · Design / Build / Electrical / Strategy",
-    tools: ["SolidWorks", "Onshape", "Java + WPILib", "3D print / CNC / Laser", "Electrical + pneumatics"],
     status: "Competition",
     problem:
       "Design, build, and compete a 125-lb robot on a ~6-week season with a young team and limited hands — every subsystem has to work on day one of quals.",
@@ -157,7 +155,6 @@ export const projects: Project[] = [
     title: "F1 2026 Power Unit Research",
     subtitle: "Regulations deep-dive · hybridization & race dynamics",
     role: "Independent researcher",
-    tools: ["Regs analysis", "Powertrain theory", "Data reasoning"],
     status: "Research",
     problem:
       "The 2026 rules change a lot about F1 power units — a bigger electric split, sustainable fuels, active aero. I'm studying them to understand what changes about the racing.",
@@ -178,7 +175,6 @@ export const projects: Project[] = [
     title: "CAD + Rapid Prototyping Practice",
     subtitle: "SolidWorks · Fusion 360 · Onshape · AutoCAD",
     role: "Designer / fabricator",
-    tools: ["SolidWorks", "Fusion 360", "AutoCAD", "MATLAB"],
     status: "Active",
     problem: "I wanted to get faster at going from a sketch to a physical part.",
     solution:
@@ -197,7 +193,6 @@ export const projects: Project[] = [
     title: "Formula SAE — Next Up at Michigan Tech",
     subtitle: "Target: join the build team, year one",
     role: "Incoming contributor (ME+AE '30)",
-    tools: ["Vehicle dynamics", "Composites", "Testing"],
     status: "Upcoming",
     problem: "FRC taught me to finish and ship a robot. Next I want to learn cars — suspension, aero, powertrain, testing.",
     solution:

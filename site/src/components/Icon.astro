@@ -1,0 +1,13 @@
+---
+interface Props {
+  src: string;
+  class?: string;
+}
+
+const { src, class: cls = "h-4 w-4" } = Astro.props;
+---
+<span
+  aria-hidden="true"
+  class:list={["inline-flex shrink-0 [&>svg]:h-full [&>svg]:w-full", cls]}
+  set:html={src}
+/>

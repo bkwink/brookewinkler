@@ -1,0 +1,26 @@
+---
+import Reveal from "./Reveal.astro";
+
+interface Props {
+  num: string;
+  eyebrow: string;
+  title: string;
+}
+
+const { num, eyebrow, title } = Astro.props;
+---
+<Reveal class="mb-10 md:mb-12">
+  <p class="font-mono text-[12px] font-medium uppercase tracking-[0.22em] text-muted">
+    <span class="font-semibold text-accent">{num}</span>
+    <span aria-hidden="true" class="mx-2 text-ink/25">/</span>
+    {eyebrow}
+  </p>
+  <h2
+    class="mt-2 font-display text-4xl md:text-[44px] font-semibold uppercase leading-[0.95] tracking-tight text-ink"
+  >
+    {title}
+  </h2>
+  <div class="relative mt-5 h-[3px] bg-ink/10" aria-hidden="true">
+    <span class="absolute left-0 top-0 h-full w-16 bg-accent"></span>
+  </div>
+</Reveal>
