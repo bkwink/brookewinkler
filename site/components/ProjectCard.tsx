@@ -19,16 +19,6 @@ export default function ProjectCard({ project }: { project: Project }) {
             {project.title}
           </h3>
           <p className="mt-1 text-sm text-muted">{project.subtitle}</p>
-          <div className="mt-4 flex flex-wrap gap-1.5">
-            {project.tools.map((t) => (
-              <span
-                key={t}
-                className="border border-ink/10 bg-paper px-2 py-1 font-mono text-[10.5px] uppercase tracking-wide text-ink-soft"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
         </div>
 
         <dl className="grid grid-cols-2 border-b border-ink/10 divide-x divide-ink/10 sm:grid-cols-4">
