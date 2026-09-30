@@ -51,14 +51,13 @@ const RIGHT_X = M + LEFT_W + GUTTER; // 406
 const BOTTOM = 46;
 
 const BODY = 9.2;
-const LH = 11.1;
+const LH = 10.8;
 
 const doc = await PDFDocument.create();
 const font = await doc.embedFont(StandardFonts.Helvetica);
 const bold = await doc.embedFont(StandardFonts.HelveticaBold);
 const mono = await doc.embedFont(StandardFonts.Courier);
 const monoBold = await doc.embedFont(StandardFonts.CourierBold);
-const oblique = await doc.embedFont(StandardFonts.HelveticaOblique);
 
 const page = doc.addPage([PAGE_W, PAGE_H]);
 
@@ -172,20 +171,6 @@ tracked(data.profile.name.toUpperCase(), {
   xScale: 0.9,
 });
 
-// discipline, right-aligned against the content edge
-const discSize = 8.6;
-const discTrack = 1.5;
-const discW = wTracked(data.profile.discipline.toUpperCase(), bold, discSize, discTrack, 0.92);
-tracked(data.profile.discipline.toUpperCase(), {
-  x: M + CONTENT_W - discW,
-  y: hy + 3,
-  size: discSize,
-  f: bold,
-  color: C.accent,
-  track: discTrack,
-  xScale: 0.92,
-});
-
 hy -= 15.5;
 hy = para(data.profile.degreeLine, { x: M, y: hy, size: 8.3, font, color: C.inkSoft, maxW: CONTENT_W - 2 });
 
@@ -204,32 +189,11 @@ hy -= 1.5;
   }
   page.drawText(contactText, { x: M, y: hy, size: contactSize, font: mono, color: C.muted });
 }
-hy -= 8;
-page.drawText(data.profile.target, { x: M, y: hy, size: 7.2, font: mono, color: C.muted });
 hy -= 9;
 
-// double rule
-page.drawRectangle({ x: M, y: hy, width: CONTENT_W, height: 1.6, color: C.ink });
-page.drawRectangle({ x: M, y: hy - 2.6, width: CONTENT_W, height: 0.6, color: C.line });
-hy -= 10;
-
-// telemetry tick band (decorative, deterministic)
-{
-  const n = 88;
-  const step = CONTENT_W / n;
-  for (let i = 0; i < n; i++) {
-    const h = 2 + ((Math.sin(i * 1.7) + 1) / 2) * 8 + ((i % 7 === 0) ? 3 : 0);
-    page.drawRectangle({
-      x: M + i * step,
-      y: hy - h,
-      width: Math.max(1, step - 2.2),
-      height: h,
-      color: i % 9 === 0 ? C.accent : C.inkSoft,
-      opacity: i % 9 === 0 ? 0.75 : 0.22,
-    });
-  }
-  hy -= 14;
-}
+// single thin rule, classic style
+page.drawRectangle({ x: M, y: hy, width: CONTENT_W, height: 0.8, color: C.ink });
+hy -= 12;
 
 const BODY_TOP = hy;
 
@@ -254,7 +218,7 @@ function section(col, label, index) {
   if (ruleEnd > ruleStart) {
     page.drawLine({ start: { x: ruleStart, y: y + 2 }, end: { x: ruleEnd, y: y + 2 }, thickness: 0.5, color: C.line });
   }
-  col.y -= 13.5;
+  col.y -= 12;
 }
 
 /* ---------------------------------------------------------------- experience entry */
@@ -268,7 +232,7 @@ function entry(col, r, { bullets = true } = {}) {
   if (!collides) {
     page.drawText(r.dates, { x: col.x + col.w - datesW, y: col.y, size: 6.9, font: mono, color: C.muted });
   }
-  col.y -= 10;
+  col.y -= 9;
 
   const orgLine = `${r.org} · ${r.location}`.toUpperCase();
   tracked(orgLine, { x: col.x, y: col.y, size: 6.9, f: bold, color: C.muted, track: 0.6 });
@@ -276,13 +240,13 @@ function entry(col, r, { bullets = true } = {}) {
     const dw = wNormal(r.dates, mono, 6.9);
     page.drawText(r.dates, { x: col.x + col.w - dw, y: col.y, size: 6.9, font: mono, color: C.muted });
   }
-  col.y -= 10.5;
+  col.y -= 9.5;
 
   if (bullets) {
     for (const b of r.bullets) {
       page.drawRectangle({ x: col.x + 0.8, y: col.y + 1.9, width: 2.7, height: 2.7, color: C.accent });
       col.y = para(b, { x: col.x + 8.5, y: col.y, maxW: col.w - 8.5, col: "left", tag: `bullet:${r.role}` });
-      col.y -= 0.6;
+      col.y -= 0.5;
     }
   }
   if (r.result) {
@@ -299,13 +263,13 @@ function entry(col, r, { bullets = true } = {}) {
       tag: `result:${r.role}`,
     });
   }
-  col.y -= 5.5;
+  col.y -= 4;
 }
 
 /* ---------------------------------------------------------------- right-rail card */
 function card(col, title, draw) {
   const startY = col.y;
-  col.y -= 12; // title room
+  col.y -= 23; // title room — must clear the red rule above and the first content line below
   const innerX = col.x + 8;
   const innerW = col.w - 16;
   col.y = draw({ x: innerX, w: innerW, y: col.y });
@@ -323,31 +287,11 @@ function card(col, title, draw) {
     borderWidth: 0.6,
   });
   page.drawRectangle({ x: col.x, y: startY - 2.2, width: col.w, height: 2.2, color: C.accent });
-  tracked(title.toUpperCase(), { x: innerX, y: startY - 5, size: 7.8, f: bold, color: C.ink, track: 0.9 });
+  tracked(title.toUpperCase(), { x: innerX, y: startY - 10, size: 7.8, f: bold, color: C.ink, track: 0.9 });
   return startY;
 }
 
 /* ---------------------------------------------------------------- LEFT COLUMN */
-// objective with a red spine
-{
-  const objX = left.x + 9;
-  const objW = left.w - 9;
-  const topY = left.y;
-  left.y = para(data.profile.objective, {
-    x: objX,
-    y: left.y,
-    size: 8.3,
-    f: font,
-    color: C.inkSoft,
-    maxW: objW,
-    lh: 10,
-    col: "left",
-    tag: "objective",
-  });
-  page.drawRectangle({ x: left.x, y: left.y + 4, width: 2.2, height: topY - left.y - 3, color: C.accent });
-  left.y -= 9;
-}
-
 section(left, "Race Operations", 1);
 for (const r of data.experience) entry(left, r);
 
@@ -358,32 +302,16 @@ section(left, "Leadership Under Pressure", 3);
 for (const r of data.leadership) entry(left, r);
 
 /* ---------------------------------------------------------------- RIGHT COLUMN */
-card(right, "By the Numbers", ({ x, y, w }) => {
-  const colW = (w - 10) / 2;
-  const rows = Math.ceil(data.stats.length / 2);
-  let ry = y;
-  for (let r = 0; r < rows; r++) {
-    let rowBottom = ry;
-    for (let cIdx = 0; cIdx < 2; cIdx++) {
-      const s = data.stats[r * 2 + cIdx];
-      if (!s) continue;
-      const sx = x + cIdx * (colW + 10);
-      page.drawText(s.value, { x: sx, y: ry - 1, size: 13.5, font: bold, color: C.accent });
-      const vw = wNormal(s.value, bold, 13.5);
-      const labelX = sx + vw + 3;
-      const labelW = colW - vw - 3;
-      const bottom = para(s.label, { x: labelX, y: ry, size: 6.3, f: mono, color: C.muted, maxW: labelW, lh: 7.6, col: "right", tag: "stats" });
-      rowBottom = Math.min(rowBottom, bottom);
-    }
-    ry = rowBottom - 9;
-  }
-  return ry;
-});
-
 card(right, "Education", ({ x, y, w }) => {
   data.education.forEach((e, i) => {
     if (i) y -= 4;
     y = para(e.school, { x, y, size: 8.3, f: bold, color: C.ink, maxW: w, lh: 9.7, col: "right", tag: "edu.school" });
+    if (e.brief) {
+      // degree + detail already stated in the header — school and place suffice
+      y = para(e.place, { x, y, size: 7, f: mono, color: C.muted, maxW: w, lh: 8.6, col: "right", tag: "edu.place" });
+      y -= 10;
+      return;
+    }
     y = para(e.degree, { x, y, size: 7.6, font, color: C.inkSoft, maxW: w, lh: 9.1, col: "right", tag: "edu.degree" });
     page.drawText(`${e.place}`, { x, y, size: 7, font: mono, color: C.muted });
     const dw = wNormal(e.detail, mono, 7);

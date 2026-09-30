@@ -32,7 +32,7 @@ export const profile = {
   lastName: "Winkler",
   degree: "Mechanical Engineering + Aerospace Engineering",
   school: "Michigan Technological University",
-  tagline: "I build things that move — robots, race cars, teams, and occasionally entire organizations.",
+  tagline: "First-year ME+AE student — I build robots, study race cars, and do my best work on teams.",
   location: "Houghton, MI",
   classOf: "Class of 2030",
   email: "bkwinkle@mtu.edu",
@@ -52,12 +52,12 @@ export const experiences: Experience[] = [
     dates: "Aug 2022 — May 2026",
     tags: ["SolidWorks", "Fabrication", "Electrical", "Strategy"],
     summary:
-      "Senior-year primary contributor for mechanical + electrical development on a student-run FIRST Robotics Competition team — CAD to competition floor.",
+      "A senior-year lead contributor for mechanical + electrical work on a student-run FIRST Robotics Competition team — CAD to competition floor.",
     bullets: [
       "Took robot subsystems from CAD through fabrication, assembly, wiring, and competition use with 3D printing, CNC, and laser cutting",
-      "Supported controls in Java / WPILib; independently tuned robot parameters and operational values at events",
-      "Led and mentored a largely inexperienced roster in design, fabrication, electrical, strategy, and pit operations",
-      "Drove match strategy, scouting, troubleshooting, and high-pressure competition decision-making",
+      "Helped with controls in Java / WPILib and tuned robot parameters and operational values at events",
+      "Helped lead and mentor newer teammates in design, fabrication, electrical, strategy, and pit operations",
+      "Contributed to match strategy, scouting, troubleshooting, and competition-day decisions",
     ],
     spotlight: {
       label: "Impact highlights",
@@ -73,12 +73,12 @@ export const experiences: Experience[] = [
     dates: "Dec 2025 — Present",
     tags: ["Sales", "Client requirements", "Web dev assist"],
     summary:
-      "Led business development and client acquisition for a student-run web development company — from cold outreach to developer handoff.",
+      "Handled business development and client outreach for a student-run web development company — from cold calls to developer handoff.",
     bullets: [
-      "Independently identified and pursued prospective clients through cold calling, email, and market research",
-      "Created the company's sales materials and sales process from scratch",
-      "Translated client needs into clear requirements for developers; assisted with development when necessary",
-      "Led outreach that evaluated local business needs and built a real pipeline",
+      "Identified and contacted prospective clients through cold calling, email, and market research",
+      "Put together the company's sales materials and sales process",
+      "Turned client needs into clear requirements for developers; helped with development when needed",
+      "Built a small pipeline by learning what local businesses actually needed",
     ],
     spotlight: {
       label: "Funded a robot",
@@ -118,10 +118,10 @@ export const experiences: Experience[] = [
     location: "Wixom, MI",
     dates: "2023 — 2026",
     tags: ["Tech crew", "Live ops"],
-    summary: "Ran backstage technical operations across multiple productions — the other kind of high-pressure pit crew.",
+    summary: "Ran backstage technical operations across multiple high school productions.",
     bullets: [
       "Managed technical crews, scene changes, props, and backstage logistics through rehearsals and live shows",
-      "Solved production and time-management problems under show-must-go-on pressure · 2× Superior Award — Stage Management",
+      "Solved production and time-management problems during live shows · 2× Superior Award — Stage Management",
     ],
   },
   {
@@ -132,7 +132,7 @@ export const experiences: Experience[] = [
     location: "Wixom, MI",
     dates: "2022 — 2025",
     tags: ["Captain Sr. year", "All-Catholic / League / Academic"],
-    summary: "Three years varsity, senior-year captain. Precision, patience, and reading the wind — useful in engineering too.",
+    summary: "Three years on varsity, senior-year captain.",
     bullets: ["Earned All-Catholic, All-League, and All-Academic honors"],
   },
 ];
@@ -149,9 +149,9 @@ export const projects: Project[] = [
     problem:
       "Design, build, and compete a 125-lb robot on a ~6-week season with a young team and limited hands — every subsystem has to work on day one of quals.",
     solution:
-      "Owned mechanical + electrical architecture. Rapid-prototyped intakes, drivetrain tuning, and wiring layouts; ran structured testing and pit-side iteration loops between matches.",
+      "I worked on mechanical and electrical design: rapid-prototyped intakes, helped tune the drivetrain, laid out wiring, and tested and iterated between matches.",
     result:
-      "Impact Award · World Championship qualification · regional/state runs — and a team of rookies who could run the pit without me by season's end.",
+      "Impact Award · World Championship qualification · regional/state runs — and newer teammates who could run the pit by season's end.",
     specs: [
       { label: "Weight class", value: "125 lb" },
       { label: "Season cadence", value: "~6 weeks" },
@@ -168,11 +168,11 @@ export const projects: Project[] = [
     tools: ["Regs analysis", "Powertrain theory", "Data reasoning"],
     status: "Research",
     problem:
-      "The 2026 regs rewrite the power unit formula — ~50/50 ICE-to-electric split, sustainable fuels, active aero. What actually changes about racing?",
+      "The 2026 rules change a lot about F1 power units — a bigger electric split, sustainable fuels, active aero. I'm studying them to understand what changes about the racing.",
     solution:
-      "Working through the technical regulations clause-by-clause and mapping them to powertrain architecture, deployment strategy, and overtaking dynamics.",
+      "Reading the technical regulations section by section and taking notes on how each rule could affect powertrain design, deployment, and overtaking.",
     result:
-      "Living research dossier — informing future Formula SAE powertrain thinking and my summer-2027 motorsports internship direction.",
+      "Living research notes — informing future Formula SAE powertrain thinking and my summer-2027 motorsports internship direction.",
     specs: [
       { label: "Focus", value: "PU + hybrid deploy" },
       { label: "Lens", value: "Regs → on-track effect" },
@@ -188,10 +188,10 @@ export const projects: Project[] = [
     role: "Designer / fabricator",
     tools: ["SolidWorks", "Fusion 360", "AutoCAD", "MATLAB"],
     status: "Active",
-    problem: "Good ideas die in vague sketches. I wanted a personal workflow from napkin sketch to physical part in days, not weeks.",
+    problem: "I wanted to get faster at going from a sketch to a physical part.",
     solution:
-      "Standing practice of parametric modeling, DFM-minded detailing, and fast iteration — print it, break it, fix the CAD, reprint. Documenting what survives contact with reality.",
-    result: "A growing library of parts and assemblies — and judgment about tolerances, fasteners, and what to simplify before competition.",
+      "Regular practice: parametric modeling, designing for fabrication, then print, break, fix, and reprint.",
+    result: "A small library of parts — and a growing sense of tolerances, fasteners, and what to simplify.",
     specs: [
       { label: "Stack", value: "SW / Fusion / Onshape" },
       { label: "Methods", value: "Print · CNC · Laser" },
@@ -207,10 +207,10 @@ export const projects: Project[] = [
     role: "Incoming contributor (ME+AE '30)",
     tools: ["Vehicle dynamics", "Composites", "Testing"],
     status: "Upcoming",
-    problem: "FRC taught me to ship robots. Now I want to learn cars — suspension, aero, powertrain, and testing like a race team.",
+    problem: "FRC taught me to finish and ship a robot. Next I want to learn cars — suspension, aero, powertrain, testing.",
     solution:
       "Joining Michigan Tech's Formula SAE effort: start where the team needs hands, earn design responsibility, bring FRC habits for CAD discipline, wiring quality, and pit operations.",
-    result: "To be built. If you're a recruiter reading this — I'd love to talk about summer 2027 in motorsports.",
+    result: "To be built — starting fall 2026. I'm hoping to talk motorsports internships for summer 2027.",
     specs: [
       { label: "Team", value: "MTU Formula SAE" },
       { label: "Interests", value: "Chassis / Aero / PU" },
@@ -225,19 +225,19 @@ export const leadership = [
     title: "FIRST Robotics Mentor & Volunteer",
     org: "Southeast Michigan",
     dates: "2022 — 2026",
-    text: "Mentored two FTC teams — helped stand up a rookie team and coached another to the Michigan State Championship. Volunteered at FRC events supporting teams through competition ops.",
+    text: "Mentored two FTC teams — helped start a rookie team and supported another to the Michigan State Championship. Also volunteered at FRC events.",
   },
   {
-    title: "Built a sales engine that built a robot",
+    title: "Sales work that funded a robot",
     org: "Avexel → FRC 7598",
     dates: "2025 — 2026",
-    text: "Business development wasn't a side quest — the revenue funded an entire competition robot. Engineering is a team sport, and teams need funding.",
+    text: "Cold calls and emails for a student web company brought in enough revenue to pay for an entire FRC robot. Unglamorous work that made the fun work possible.",
   },
   {
-    title: "Crews that trust each other under pressure",
+    title: "Small teams, live pressure",
     org: "Stage · Golf · Pit",
     dates: "Ongoing",
-    text: "Stage manager, golf captain, pit lead — different uniforms, same job: keep calm people coordinated when the clock is running.",
+    text: "Stage manager, golf captain, pit crew — I'm still early, but I've learned I like being responsible when the clock is running.",
   },
 ];
 
@@ -279,7 +279,7 @@ export const skills = [
   {
     group: "Team & Leadership",
     icon: "flag",
-    items: ["Technical leadership", "Project management", "Technical communication", "Public speaking", "Strategy & scouting"],
+    items: ["Team leadership", "Project management", "Technical communication", "Public speaking", "Strategy & scouting"],
   },
 ];
 
@@ -291,14 +291,4 @@ export const honors = [
   "FIRST World Championship Qualifier",
   "2× Superior Award — Stage Management",
   "All-Catholic · All-League · All-Academic — Golf",
-];
-
-export const railSections = [
-  { id: "top", label: "GRID", num: "00" },
-  { id: "about", label: "ABOUT", num: "01" },
-  { id: "experience", label: "EXPERIENCE", num: "02" },
-  { id: "projects", label: "ENGINEERING", num: "03" },
-  { id: "leadership", label: "LEADERSHIP", num: "04" },
-  { id: "education", label: "EDUCATION", num: "05" },
-  { id: "contact", label: "CONTACT", num: "06" },
 ];

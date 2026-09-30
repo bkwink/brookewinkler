@@ -5,7 +5,7 @@ import "./globals.css";
 const display = Oswald({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["500", "600", "700"],
 });
 
 const sans = Inter({
@@ -22,11 +22,11 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Brooke Winkler — ME + AE | Michigan Tech '30",
   description:
-    "Brooke Winkler builds things that move — robots, race cars, teams. Mechanical + Aerospace Engineering at Michigan Tech. FRC Captain, motorsports, robotics, design.",
+    "Brooke Winkler is a first-year Mechanical + Aerospace Engineering student at Michigan Tech. FRC captain, robotics mentor, motorsports fan.",
   openGraph: {
-    title: "Brooke Winkler — I build things that move",
+    title: "Brooke Winkler — Michigan Tech '30",
     description:
-      "Mechanical + Aerospace Engineering, Michigan Tech '30. FRC Captain, robotics, motorsports engineering, design.",
+      "First-year Mechanical + Aerospace Engineering student at Michigan Tech. FRC captain, robotics, motorsports.",
     type: "website",
   },
 };

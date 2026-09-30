@@ -14,8 +14,8 @@
         "value": "(248) 444-1218"
       },
       {
-        "label": "linkedin",
-        "value": "linkedin.com/in/brooke-winkler-8a442a366"
+        "label": "website",
+        "value": "brookewinkler.com"
       },
       {
         "label": "location",
@@ -32,12 +32,13 @@
       "location": "Wixom, MI",
       "dates": "Aug 2022 – May 2026",
       "bullets": [
-        "Ran match strategy, scouting and real-time pit decisions through six-week build-and-compete seasons on a rookie-heavy roster.",
-        "Tuned robot parameters and operational values between and during matches — hands-on telemetry work that made the calls I made executable.",
-        "Owned the technical chain end to end: SolidWorks design, CNC / 3D-print / laser fabrication, wiring, and Java + WPILib bring-up.",
-        "Mentored newer members into independent ownership of design, build, pit and match operations."
-      ],
-      "result": "FIRST Impact Award · World Championship qualifier · regional & state competition runs"
+        "Led mechanical design, fabrication, electrical systems, and competition strategy for a student-run FIRST Robotics Competition team.",
+        "Served as the primary contributor for mechanical and electrical development during senior year, taking designs from CAD through fabrication, assembly, wiring, and competition use.",
+        "Utilized SolidWorks for detailed mechanical design and 3D printing, CNC machining, and laser cutting for rapid prototyping and final components.",
+        "Supported robot programming and controls development using Java and WPILib while independently tuning robot parameters and operational values.",
+        "Led and mentored newer team members in mechanical design, fabrication, electrical work, strategy, and competition operations.",
+        "Guided the team through regional and state-level competition and qualification for the FIRST World Championship."
+      ]
     },
     {
       "role": "Media Team — Photographer & Journalist",
@@ -45,8 +46,8 @@
       "location": "Detroit, MI",
       "dates": "Jul 2026",
       "bullets": [
-        "Worked inside a top-tier motorsports event weekend, supporting media and race-adjacent operations and seeing how a professional paddock is run.",
-        "Filed coverage with local news outlets — turning raw event detail into a story a wider audience could follow."
+        "Supported media operations for the Red Bull Racing Detroit Showrun, gaining firsthand exposure to professional motorsports media and event operations.",
+        "Served as a photographer and journalist, sharing experiences with local news outlets to promote events."
       ]
     },
     {
@@ -55,8 +56,9 @@
       "location": "Harbor Springs, MI",
       "dates": "Dec 2025 – Present",
       "bullets": [
-        "Built the outbound engine from nothing — process, materials, qualification criteria and client pipeline.",
-        "Helped generate the revenue that funded an entire FRC competition robot."
+        "Conduct client outreach through cold calling and email to develop business opportunities for a student-run web development company.",
+        "Conduct market research to identify potential clients and evaluate local business needs and opportunities.",
+        "Support marketing and communications efforts while collaborating with developers on client-facing initiatives."
       ]
     }
   ],
@@ -67,9 +69,8 @@
       "location": "Self-directed",
       "dates": "2026 – Present",
       "bullets": [
-        "Reading the 2026 PU regulations clause by clause: the near-50/50 ICE-to-electric split, deployment modes, sustainable fuels, active aero.",
-        "Mapping each rule to its on-track consequence — deployment strategy, race rhythm, overtaking mechanics, and how the field reshapes.",
-        "Writing it as a briefing I would defend line by line — the discipline I want to apply to real team data."
+        "Conducting research into the 2026 Formula 1 power unit regulations and their effects on racing.",
+        "Investigating changes in powertrain design, hybridization, vehicle performance, and competitive racing dynamics."
       ]
     }
   ],
@@ -80,9 +81,9 @@
       "location": "Wixom, MI",
       "dates": "2022 – 2025",
       "bullets": [
-        "Senior-year captain after three varsity seasons — reading conditions, committing to a plan, holding rhythm under a clock."
-      ],
-      "result": "All-Catholic · All-League · All-Academic"
+        "Served as varsity team captain during senior year after three years as a varsity athlete.",
+        "Earned All-Catholic, All-League, and All-Academic honors."
+      ]
     },
     {
       "role": "Technical Director & Stage Manager",
@@ -90,7 +91,8 @@
       "location": "Wixom, MI",
       "dates": "2023 – 2026",
       "bullets": [
-        "Ran backstage technical operations and crews across productions, solving logistics and timing problems live."
+        "Led backstage technical operations and crews across multiple productions, coordinating scene changes, props, logistics, and crew responsibilities during rehearsals and performances.",
+        "Developed practical solutions to complex production and time-management challenges while maintaining show readiness under high-pressure conditions."
       ],
       "result": "2× Superior Award — Stage Management"
     },
@@ -100,7 +102,8 @@
       "location": "Michigan",
       "dates": "2022 – 2026",
       "bullets": [
-        "Mentored two FTC teams, including standing up a rookie organisation and coaching one to the Michigan State Championship."
+        "Mentored two FIRST Tech Challenge teams, including helping establish a rookie team and supporting another team through qualification for the Michigan State Championship.",
+        "Volunteered at FIRST robotics competitions and supported students and teams throughout competition operations."
       ]
     }
   ],
@@ -109,7 +112,8 @@
       "school": "Michigan Technological University",
       "place": "Houghton, MI",
       "degree": "B.S. Mechanical Engineering & Aerospace Engineering",
-      "detail": "Honors Program · expected April 2030"
+      "detail": "Honors Program · expected April 2030",
+      "brief": true
     },
     {
       "school": "St. Catherine of Siena Academy",

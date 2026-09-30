@@ -1,6 +1,7 @@
-import { Mail, Phone, Download, ArrowDown } from "lucide-react";
+import { Download, ArrowUp } from "lucide-react";
 import { profile } from "@/lib/resume-data";
 import Reveal from "./Reveal";
+
 function LinkedInIcon({ className = "h-4 w-4" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -12,55 +13,52 @@ function LinkedInIcon({ className = "h-4 w-4" }: { className?: string }) {
 export default function ContactFooter() {
   return (
     <Reveal>
-      <footer className="border-2 border-ink bg-ink text-paper">
-        <div className="p-6 md:p-10">
-          <div className="flex flex-wrap items-center gap-3 font-mono text-[11px] uppercase tracking-[0.22em] text-paper/60">
-            <span className="inline-block h-2 w-2 bg-accent live-dot" aria-hidden />
-            07 / Contact — Pit wall open
-            <span className="ml-auto hidden md:inline">BW.2030 // Houghton, MI</span>
-          </div>
-          <h2 className="mt-4 font-display text-4xl md:text-6xl font-semibold uppercase leading-[0.95] tracking-tight">
-            Let&apos;s build<br />something <span className="text-accent">fast.</span>
-          </h2>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-paper/75">
-            Seeking a motorsports engineering internship for <strong className="text-paper">Summer 2027</strong> —
-            F1, high-performance powertrain, vehicle development, strategy. Engineering is a team sport.
+      <footer className="bg-ink text-paper">
+        <div className="p-8 md:p-12">
+          <p className="font-mono text-[12px] uppercase tracking-[0.22em] text-paper/50">
+            <span className="font-semibold text-accent">07</span>
+            <span aria-hidden className="mx-2 text-paper/25">
+              /
+            </span>
+            Contact
           </p>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <h2 className="mt-4 max-w-3xl font-display text-5xl md:text-7xl font-semibold uppercase leading-[0.95] tracking-tight">
+            Let&apos;s build something <span className="text-accent">fast.</span>
+          </h2>
+          <p className="mt-5 max-w-xl text-[15.5px] leading-relaxed text-paper/70">
+            I&apos;m looking for a motorsports engineering internship for{" "}
+            <strong className="font-semibold text-paper">Summer 2027</strong> — high-performance
+            powertrains, vehicle development, and strategy.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
             <a
               href="/Brooke-Winkler-Resume.pdf"
               download
-              className="inline-flex items-center gap-2 bg-accent px-5 py-3 font-mono text-[12px] font-semibold uppercase tracking-[0.15em] text-white hover:bg-accent-deep transition-colors focus-visible:outline-2 focus-visible:outline-white"
+              className="inline-flex items-center gap-2 bg-accent px-6 py-3 font-mono text-[12.5px] font-semibold uppercase tracking-[0.14em] text-white transition-colors hover:bg-accent-deep focus-visible:outline-2 focus-visible:outline-white"
             >
               <Download className="h-4 w-4" aria-hidden /> Download resume
             </a>
             <a
               href={`mailto:${profile.email}`}
-              className="inline-flex items-center gap-2 border border-paper/40 px-5 py-3 font-mono text-[12px] font-semibold uppercase tracking-[0.15em] hover:bg-paper hover:text-ink transition-colors"
+              className="inline-flex items-center gap-2 border border-paper/30 px-6 py-3 font-mono text-[12.5px] font-semibold uppercase tracking-[0.14em] text-paper transition-colors hover:border-paper hover:bg-paper hover:text-ink"
             >
-              <Mail className="h-4 w-4" aria-hidden /> {profile.email}
+              {profile.email}
             </a>
             <a
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 border border-paper/40 px-5 py-3 font-mono text-[12px] font-semibold uppercase tracking-[0.15em] hover:bg-paper hover:text-ink transition-colors"
+              className="inline-flex items-center gap-2 border border-paper/30 px-6 py-3 font-mono text-[12.5px] font-semibold uppercase tracking-[0.14em] text-paper transition-colors hover:border-paper hover:bg-paper hover:text-ink"
             >
               <LinkedInIcon /> LinkedIn
             </a>
-            <a
-              href={`tel:${profile.phone}`}
-              className="inline-flex items-center gap-2 border border-paper/40 px-5 py-3 font-mono text-[12px] font-semibold uppercase tracking-[0.15em] hover:bg-paper hover:text-ink transition-colors"
-            >
-              <Phone className="h-4 w-4" aria-hidden /> {profile.phone}
-            </a>
           </div>
         </div>
-        <div className="border-t border-paper/20 px-6 md:px-10 py-4 flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[11px] tracking-[0.15em] uppercase text-paper/55">
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 border-t border-paper/15 px-8 md:px-12 py-5 font-mono text-[11px] uppercase tracking-[0.14em] text-paper/50">
           <span>© 2026 Brooke Winkler</span>
-          <span>Usually found near a robot, race car, or questionable CAD decision.</span>
+          <span>Houghton, Michigan</span>
           <a href="#top" className="ml-auto inline-flex items-center gap-1.5 hover:text-paper">
-            Back to grid <ArrowDown className="h-3.5 w-3.5 rotate-180" aria-hidden />
+            Back to top <ArrowUp className="h-3.5 w-3.5" aria-hidden />
           </a>
         </div>
       </footer>
