@@ -13,9 +13,7 @@ export type Experience = {
 
 export type Project = {
   id: string;
-  code: string;
   title: string;
-  subtitle: string;
   role: string;
   problem: string;
   solution: string;
@@ -129,9 +127,7 @@ export const experiences: Experience[] = [
 export const projects: Project[] = [
   {
     id: "frc-robot",
-    code: "PRJ—01",
     title: "FRC Competition Robots",
-    subtitle: "Team 7598 · full-season design → build → compete",
     role: "Captain · Design / Build / Electrical / Strategy",
     problem:
       "Design, build, and compete a 125-lb robot on a ~6-week season with a young team and limited hands — every subsystem has to work on day one of quals.",
@@ -142,9 +138,7 @@ export const projects: Project[] = [
   },
   {
     id: "f1-pu",
-    code: "PRJ—02",
     title: "F1 2026 Power Unit Research",
-    subtitle: "Regulations deep-dive · hybridization & race dynamics",
     role: "Independent researcher",
     problem:
       "The 2026 rules change a lot about F1 power units — a bigger electric split, sustainable fuels, active aero. I'm studying them to understand what changes about the racing.",
@@ -155,9 +149,7 @@ export const projects: Project[] = [
   },
   {
     id: "cad",
-    code: "PRJ—03",
     title: "CAD + Rapid Prototyping Practice",
-    subtitle: "SolidWorks · Fusion 360 · Onshape · AutoCAD",
     role: "Designer / fabricator",
     problem: "I wanted to get faster at going from a sketch to a physical part.",
     solution:
@@ -166,9 +158,7 @@ export const projects: Project[] = [
   },
   {
     id: "fsae",
-    code: "PRJ—04",
     title: "Formula SAE — Next Up at Michigan Tech",
-    subtitle: "Target: join the build team, year one",
     role: "Incoming contributor (ME+AE '30)",
     problem: "FRC taught me to finish and ship a robot. Next I want to learn cars — suspension, aero, powertrain, testing.",
     solution:
